@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx ="http://javafx.com/fxml/1" 
+			styleClass ="borderpane" 
+			fx:controller = "WelcomeController" 
+			prefWidth = "800" prefHeight = "600">
+			
+			<!-- Title -->
+			<top>
+				<Label fx:id = "titleLabel" text = "3 Card Poker" BorderPane.Alignment = "CENTER" />
+			</top>
+			
+			<!-- Input text fields and connect button -->
+			<center>
+				<VBox spacing = "30" alignment = "CENTER">
+					<children>
+					
+						<!-- Name TextField -->
+						<HBox spacing = "10" alignment = "CENTER">
+							<children>
+								<Label text = "Name:" prefWidth = "90" />
+								<TextField fx:id = "nameField"
+										   promptText = "Enter your name"
+										   prefWidth = "220" />
+								</children>
+						</HBox>
+						
+						<!-- IP TextField -->
+						<HBox spacing = "10" alignment = "CENTER">
+							<children>
+								<Label text = "Server IP:" prefWidth = "90"/>
+								<TextField fx:id = "ipField"
+										   promptText = "127.0.0.1"
+										   prefWidth = "220" />
+								</children>
+						</HBox>
+						
+						<!-- Port TextField -->
+						<HBox spacing = "10" alignment = "CENTER">
+							<children>
+								<Label text = "Port:" prefWidth = "90"/>
+								<TextField fx:id = "portField"
+										   promptText = "555"
+										   prefWidth = "220" />
+								</children>
+						</HBox>
+						
+						<!-- Connect Button -->
+						<Button fx:id = "connectButton"
+								text = "Connect"
+								onAction = "#connectToServer"
+								prefWidth = "150"
+								prefHeight = "40" />
+								
+						<!-- Status Label -->
+						<Label fx:id = "statusLabel" />
+					</children>
+				</VBox>
+			</center>
+			
+			<padding>
+				<Insets top = "20" right = "20" bottom = "20" left = "20" />
+			</padding>
+</BorderPane>

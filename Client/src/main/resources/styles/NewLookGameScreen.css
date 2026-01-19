@@ -1,0 +1,155 @@
+.root {
+	-fx-background-color: linear-gradient(to bottom, #0a3d62, #60a3bc);
+	-fx-font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.label {
+	-fx-text-fill: #e8f7ff;
+	-fx-font-size: 20px;
+	-fx-font-weight: bold;
+}
+
+#dealerLabel, #playerLabel {
+	-fx-text-fill: #ffffff;
+	-fx-font-size: 26px;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(gaussian, #00000055, 4, 0.3, 0, 1);
+}
+
+#totalWinningsLabel {
+	-fx-text-fill: #d6f2ff;
+	-fx-font-size: 22px;
+	-fx-font-weight: bold;
+	-fx-effect: dropshadow(gaussian, #0008, 4, 0.3, 0, 2);
+}
+
+.text-field, .text-field:focused {
+	-fx-text-fill: #00263d;
+	-fx-font-size: 18px;
+	-fx-background-color: rgba(255, 255, 255, 0.85);
+	-fx-background-radius: 6;
+	-fx-border-color: #b4ddff;
+	-fx-border-width: 1.5;
+}
+
+#playBetField {
+	-fx-opacity: 0.75;
+}
+
+.button {
+	-fx-background-color: linear-gradient(#86c5ff, #5ba9ff);
+	-fx-background-radius: 8;
+	-fx-text-fill: #ffffff;
+	-fx-font-weight: bold;
+	-fx-font-size: 18px;
+	-fx-padding: 10 20;
+	-fx-effect: dropshadow(gaussian, #0004, 6, 0.2, 0, 2);
+}
+
+.button:hover {
+	-fx-background-color: linear-gradient(#aad8ff, #86c5ff);
+}
+
+.button:pressed {
+	-fx-background-color: linear-gradient(#6bb8ff, #509ced);
+}
+
+#dealButton, #playButton, #foldButton {
+	-fx-border-color: #e8f7ff;
+	-fx-border-width: 2;
+	-fx-border-radius: 8;
+}
+
+.menu-bar {
+	-fx-background-color: rgba(200, 225, 255, 0.45);
+	-fx-background-radius: 0 0 6 6;
+	-fx-effect: dropshadow(gaussian, #0003, 6, 0.2, 0, 2);
+}
+
+.menu-bar .label {
+	-fx-text-fill: #ffffff;
+	-fx-font-size: 18px;
+}
+
+.menu:hover {
+	-fx-background-color: rgba(180, 210, 255, 0.55);
+}
+
+.context-menu {
+	-fx-background-color: #e1f1ff;
+	-fx-border-color: #9ac7ff;
+}
+
+.context-menu .menu-item {
+	-fx-background-color: transparent;
+	-fx-text-fill: #003a66;
+}
+
+.context-menu .menu-item:hover {
+	-fx-background-color: #cfe9ff;
+	-fx-text-fill: #000000;
+}
+
+.list-view {
+	-fx-background-color: rgba(200, 225, 255, 0.35);
+	-fx-control-inner-background: rgba(200, 225, 255, 0.35);
+	-fx-border-color: #9ac7ff;
+	-fx-border-width: 2;
+	-fx-background-insets: 0;
+	-fx-padding: 5;
+	-fx-background-radius: 6;
+}
+
+.list-cell {
+	-fx-background-color: transparent;
+	-fx-text-fill: #ffffff;
+	-fx-font-size: 13px;
+	-fx-padding: 6 8 6 10;
+}
+
+.list-cell:hover {
+	-fx-background-color: rgba(150, 190, 255, 0.45);
+}
+
+.list-cell:selected {
+	-fx-background-color: rgba(120, 170, 245, 0.65);
+	-fx-text-fill: #ffffff;
+}
+
+.custom-alert {
+	-fx-background-color: #d6efff;
+	-fx-background-radius: 8;
+	-fx-border-color: #9ac7ff;
+	-fx-border-width: 2;
+	-fx-border-radius: 8;
+	-fx-padding: 10;
+}
+
+.custom-alert .label {
+	-fx-text-fill: #003a66;
+	-fx-font-family: "Poppins";
+	-fx-font-size: 16px;
+}
+
+.custom-alert .header-panel {
+	-fx-background-color: linear-gradient(to right, #b8ddff, #8ccaff);
+	-fx-padding: 6 10 6 10;
+}
+
+.custom-alert .header-panel .label {
+	-fx-font-size: 12px;
+	-fx-font-weight: bold;
+}
+
+.custom-alert .button-bar .button {
+	-fx-background-color: #8ccaff;
+	-fx-background-radius: 4;
+	-fx-font-weight: bold;
+	-fx-text-fill: #003a66;
+	-fx-font-size: 16px;
+	-fx-padding: 4 10;
+}
+
+.custom-alert .button-bar .button:hover {
+	-fx-background-color: #72baff;
+}

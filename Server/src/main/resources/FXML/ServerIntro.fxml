@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+
+<BorderPane xmlns:fx ="http://javafx.com/fxml/1" 
+			styleClass ="borderpane" 
+			fx:controller = "ServerIntroController" 
+			prefWidth = "800" prefHeight = "600">
+	
+	<!-- Status Label in top left -->
+	<top>
+		<Label fx:id = "statusLabel"
+			   text = "Server: OFF"
+			   BorderPane.alignment = "CENTER_LEFT"/>
+		<BorderPane.margin>
+			<Insets top = "10" right = "0" bottom = "0" left = "10"/>
+		</BorderPane.margin>
+	</top>
+	
+	<!-- Middle including title, text field, and start button -->
+	<center>
+		<VBox alignment = "CENTER" spacing = "30" fillWidth = "false">
+			<children>
+				<!-- Title -->
+				<Label fx:id = "titleLabel" text = "3-Card Poker Server"/>
+			
+				<!-- Text Box with Text -->
+				<HBox alignment = "CENTER" spacing = "20">
+					<children>
+						<Label text = "Port Number:"/>
+						<TextField fx:id = "portTextField"
+						  	   	   promptText = "e.g. 555"
+						   	   	   prefWidth = "125.0"
+						   	   	   prefHeight = "36.0"
+						   	   	   minHeight = "36.0"
+						   	   	   maxHeight = "36.0"
+						   	   	   HBox.hgrow = "NEVER"/>
+					</children>
+				</HBox>
+			
+				<!-- Start Server Button -->
+				<Button fx:id = "startButton"
+				    	text = "Start Server"
+				    	prefWidth = "150.0"
+				    	prefHeight = "44.0"
+				    	minHeight = "44.0"
+				    	maxHeight = "44.0"
+				    	onAction = "#startButtonClicked"/>
+			</children>
+		</VBox>
+	</center>
+	
+</BorderPane>

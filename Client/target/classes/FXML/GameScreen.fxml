@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ListView?>
+
+
+<BorderPane xmlns:fx ="http://javafx.com/fxml/1" 
+			styleClass ="borderpane" 
+			fx:controller = "GameScreenController" 
+			prefWidth = "800" prefHeight = "600">
+			
+	<!-- Menu Bar at Top -->
+	<top>
+		<MenuBar fx:id = "menuBar">
+			<menus>
+				<Menu fx:id = "optionsMenu" text = "Options">
+					<items>
+						<MenuItem fx:id = "exit" text = "Exit"/>
+						<MenuItem fx:id = "freshStart" text = "Fresh Start"/>
+						<MenuItem fx:id = "newLook" text = "New Look"/>
+					</items>
+				</Menu>
+			</menus>
+		</MenuBar>
+	</top>
+	
+	<!-- Center, Split into left(cards/buttons) and right (log/bets) -->
+	<center>
+		<HBox spacing = "30" alignment = "TOP_LEFT">
+			<!-- Left Side (Dealer Cards, Player Cards, Buttons) -->
+			<VBox spacing = "30" alignment = "TOP_LEFT">
+				<!-- Dealer -->
+				<VBox alignment = "TOP_CENTER" spacing = "10">
+					<Label fx:id = "dealerLabel" text = "Dealer" />
+					<HBox fx:id = "dealerCards" spacing = "10" alignment = "CENTER">
+						<!-- Cards loaded Dynamically -->
+					</HBox>
+				</VBox>
+				<!-- Player -->
+				<VBox alignment = "TOP_CENTER" spacing = "10">
+					<Label fx:id = "playerLabel" text = "You" />
+					<HBox fx:id = "playerCards" spacing = "10" alignment = "CENTER">
+						<!-- Cards loaded Dynamically -->
+					</HBox>
+				</VBox>
+				<!-- Buttons -->
+				<Pane VBox.vgrow = "ALWAYS" />
+				<HBox spacing = "20" alignment = "CENTER">
+					<Button fx:id = "deal" text = "Deal" prefWidth = "120" onAction = "#dealFunc"/>
+					<Button fx:id = "play" text = "Play" prefWidth = "120" onAction = "#playFunc"/>
+					<Button fx:id = "fold" text = "Fold" prefWidth = "120" onAction = "#foldFunc"/>
+				</HBox>
+				<padding>
+					<Insets top = "40" right = "0" bottom = "20" left = "20" />
+				</padding>
+			</VBox>
+			
+			<!-- Right Side (Log + Winnings + Bets) -->
+			<VBox spacing = "15" alignment = "TOP_CENTER">
+				<!-- Game Log -->
+				<Label text = "Game Log" />
+				<ListView fx:id = "gameLog" prefHeight = "300" prefWidth = "330" />
+				
+				<!-- Winnings -->
+				<Label fx:id = "totalWinningsLabel" text = "Total Winnings: $0" />
+				
+				<!-- Bets -->
+				<VBox spacing = "10">
+					<HBox spacing = "10">
+						<Label text = "Ante:" prefWidth = "100" />
+						<TextField fx:id = "anteBet" prefWidth = "120" />
+					</HBox>
+					<HBox spacing = "10">
+						<Label text = "Pair Plus:" prefWidth = "100" />
+						<TextField fx:id = "pairPlus" prefWidth = "120" />
+					</HBox>
+					<HBox spacing = "10">
+						<Label text = "Play:" prefWidth = "100" />
+						<TextField fx:id = "playBet" prefWidth = "120" />
+					</HBox>
+				</VBox>
+				<padding>
+					<Insets top = "40" right = "20" bottom = "20" left = "0" />
+				</padding>
+			</VBox>
+		</HBox>
+	</center>
+</BorderPane>

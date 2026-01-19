@@ -1,0 +1,48 @@
+.root {
+	-fx-background-color: linear-gradient(to bottom, #0a3d62, #60a3bc);
+	-fx-font-family: "Segoe UI", sans-serif;
+}
+
+#resultTitle {
+	-fx-font-size: 50px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #ffffff;
+	-fx-effect: dropshadow(gaussian, #003b80aa, 14, 0.3, 0, 4);
+}
+
+#resultDetail {
+	-fx-font-size: 22px;
+	-fx-text-fill: #e8f7ff;
+	-fx-font-weight: 600;
+	-fx-text-alignment: center;
+}
+
+#roundWinnings {
+	-fx-font-size: 26px;
+	-fx-font-weight: bold;
+	-fx-text-fill: #c7e9ff;
+}
+
+#totalWinnings {
+	-fx-font-size: 24px;
+	-fx-text-fill: #ecf7ff;
+	-fx-font-weight: bold;
+}
+
+.button {
+	-fx-font-size: 22px;
+	-fx-padding: 10 20;
+	-fx-background-color: linear-gradient(#90cfff, #6ab6ff);
+	-fx-text-fill: #ffffff;
+	-fx-background-radius: 10;
+	-fx-effect: dropshadow(gaussian, #0004, 8, 0.3, 0, 2);
+}
+
+.button:hover {
+	-fx-background-color: linear-gradient(#aedcff, #90cfff);
+	-fx-effect: dropshadow(gaussian, #0007, 10, 0.4, 0, 3);
+}
+
+.button:pressed {
+	-fx-background-color: linear-gradient(#78c1ff, #57a8f3);
+}

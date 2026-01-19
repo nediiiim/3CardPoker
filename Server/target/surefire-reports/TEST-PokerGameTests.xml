@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="PokerGameTests" time="0.025" tests="14" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="17"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/nedimdelic/Desktop/Fall 2025/CS 342/Project3Server/target/test-classes:/Users/nedimdelic/Desktop/Fall 2025/CS 342/Project3Server/target/classes:/Users/nedimdelic/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.1/junit-jupiter-5.9.1.jar:/Users/nedimdelic/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/nedimdelic/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/nedimdelic/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/Users/nedimdelic/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/nedimdelic/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.1/junit-jupiter-params-5.9.1.jar:/Users/nedimdelic/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/nedimdelic/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-controls/19.0.2.1/javafx-controls-19.0.2.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-controls/19.0.2.1/javafx-controls-19.0.2.1-mac-aarch64.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-graphics/19.0.2.1/javafx-graphics-19.0.2.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-graphics/19.0.2.1/javafx-graphics-19.0.2.1-mac-aarch64.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-base/19.0.2.1/javafx-base-19.0.2.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-base/19.0.2.1/javafx-base-19.0.2.1-mac-aarch64.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-fxml/19.0.2.1/javafx-fxml-19.0.2.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-fxml/19.0.2.1/javafx-fxml-19.0.2.1-mac-aarch64.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="17"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="US"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-17.0.16.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/nedimdelic/Desktop/Fall 2025/CS 342/Project3Server/target/surefire/surefirebooter12404990412684765340.jar /Users/nedimdelic/Desktop/Fall 2025/CS 342/Project3Server/target/surefire 2025-11-23T15-46-00_816-jvmRun1 surefire3430386574272516181tmp surefire_04573664314189573237tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/nedimdelic/Desktop/Fall 2025/CS 342/Project3Server/target/test-classes:/Users/nedimdelic/Desktop/Fall 2025/CS 342/Project3Server/target/classes:/Users/nedimdelic/.m2/repository/org/junit/jupiter/junit-jupiter/5.9.1/junit-jupiter-5.9.1.jar:/Users/nedimdelic/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.9.1/junit-jupiter-api-5.9.1.jar:/Users/nedimdelic/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/nedimdelic/.m2/repository/org/junit/platform/junit-platform-commons/1.9.1/junit-platform-commons-1.9.1.jar:/Users/nedimdelic/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/nedimdelic/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.9.1/junit-jupiter-params-5.9.1.jar:/Users/nedimdelic/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.9.1/junit-jupiter-engine-5.9.1.jar:/Users/nedimdelic/.m2/repository/org/junit/platform/junit-platform-engine/1.9.1/junit-platform-engine-1.9.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-controls/19.0.2.1/javafx-controls-19.0.2.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-controls/19.0.2.1/javafx-controls-19.0.2.1-mac-aarch64.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-graphics/19.0.2.1/javafx-graphics-19.0.2.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-graphics/19.0.2.1/javafx-graphics-19.0.2.1-mac-aarch64.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-base/19.0.2.1/javafx-base-19.0.2.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-base/19.0.2.1/javafx-base-19.0.2.1-mac-aarch64.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-fxml/19.0.2.1/javafx-fxml-19.0.2.1.jar:/Users/nedimdelic/.m2/repository/org/openjfx/javafx-fxml/19.0.2.1/javafx-fxml-19.0.2.1-mac-aarch64.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/nedimdelic"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-07-15"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-17.0.16.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/nedimdelic/Desktop/Fall 2025/CS 342/Project3Server"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="surefire.real.class.path" value="/Users/nedimdelic/Desktop/Fall 2025/CS 342/Project3Server/target/surefire/surefirebooter12404990412684765340.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="17.0.16+12-LTS-247"/>
+    <property name="user.name" value="nedimdelic"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="15.6.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="/Users/nedimdelic/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/cj/582242yn50b4tqbclwsvl1p00000gn/T/"/>
+    <property name="java.version" value="17.0.16"/>
+    <property name="user.dir" value="/Users/nedimdelic/Desktop/Fall 2025/CS 342/Project3Server"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/nedimdelic/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="17.0.16+12-LTS-247"/>
+    <property name="java.specification.maintenance.version" value="1"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="61.0"/>
+  </properties>
+  <testcase name="foldRoundNoPairPlusTest" classname="PokerGameTests" time="0.014"/>
+  <testcase name="foldRoundPairPlusTest" classname="PokerGameTests" time="0"/>
+  <testcase name="playRoundPlayerTiesTest" classname="PokerGameTests" time="0.001"/>
+  <testcase name="playRoundPlayerLosesTest" classname="PokerGameTests" time="0.001"/>
+  <testcase name="dealerQualifiesQueenHighTest" classname="PokerGameTests" time="0"/>
+  <testcase name="playRoundPlayerWinsTest" classname="PokerGameTests" time="0.001"/>
+  <testcase name="pairPlusLosesTest" classname="PokerGameTests" time="0"/>
+  <testcase name="resetGameTest" classname="PokerGameTests" time="0.001"/>
+  <testcase name="pairPlusNoBetTest" classname="PokerGameTests" time="0"/>
+  <testcase name="dealerQualifiesPairTest" classname="PokerGameTests" time="0"/>
+  <testcase name="playRoundNotQualifiedTest" classname="PokerGameTests" time="0"/>
+  <testcase name="pairPlusPairWinsTest" classname="PokerGameTests" time="0.001"/>
+  <testcase name="dealerDoesNotQualifyTest" classname="PokerGameTests" time="0"/>
+  <testcase name="pairPlusStraightWinsTest" classname="PokerGameTests" time="0.001"/>
+</testsuite>
